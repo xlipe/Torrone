@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+        <title>Torrone</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <base target="_self">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        </style>
+</head>
+
+<body>
+<div class="content">
+        <nav>
+                <div class="poscentralized">
+                        <ul>
+                                <li class="nav"><a href="index.html">Início</a></li>
+                                <li class="nav"><a href="historia.html">História</a></li>
+                                <li class="nav"><a href="quiz.html">Quiz</a></li>
+                                <li class="nav"><a href="curiosidades.html">Curiosidades</a></li>
+                                <li class="selected"><a href="jogo.html">Jogo</a></li>
+                        </ul>
+                </div>
+        </nav>
+
+<h1>Torrone</h1>
+<h2>Jogo da Veia</h2>
+<h3>Jogue o jogo da velha com o nosso torronito!
+<br /><br /></h3>
+
+        <div class="poscentralized">
+                <div id='board'></div><br />
+        </div>
+        
+        <span style="display: inline;"></span>
+        Linha: <input id="lin" type="number" min="1" max="3"><br /><br />
+        Coluna: <input id="col" type="number" min="1" max="3"><br /><br />
+        <button onclick="jogar()">Marcar</button><br />
+        
+        <div id='aviso'></div><br /></div>
+
+        <footer>
+                <script src="js/calendario.js"></script>
+                <script src="js/jogo.js"></script>
+        
+                <div class="alittlespace"></div>
+              
+                <div class="centrado">
+                        <div class="tooltip">
+                                <div class="centrinho"> Passe o mouse</div><span>Obrigado por passar o mouse</span>
+                        </div>
+                </div>
+              
+                <div class="centrado">
+                        <div id="calendario"></div>
+                </div>
+              
+                <div class="centrado">
+                        Criado por Filipe Carvalho em 2022
+                </div>
+              
+        </footer>
+</body>
+    
+</html>

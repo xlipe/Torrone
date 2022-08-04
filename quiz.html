@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+        <title>Torrone</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="stylesheet" type="text/css" href="normalize.css">
+        <base target="_self">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+        </style>
+</head>
+
+<body>
+
+  <div class="content">
+    <nav>
+      <div class="poscentralized">
+        <ul>
+          <li class="nav"><a href="index.html">Início</a></li>
+          <li class="nav"><a href="historia.html">História</a></li>
+          <li class="selected"><a href="quiz.html">Quiz</a></li>
+          <li class="nav"><a href="curiosidades.html">Curiosidades</a></li>
+          <li class="nav"><a href="jogo.html">Jogo</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1>Torrone</h1>
+    <h2>Quiz</h2>
+
+    <form>
+      <p class="perguntas">Qual o país famoso por ter o Torrone original?</p>
+        <input type="radio" id="Italia" name="pergunta1" value="Italia">
+        <label for="Italia">Itália</label><br>
+        <input type="radio" id="Alemanha" name="pergunta1" value="Alemanha">
+        <label for="Alemanha">Alemanha</label><br>
+        <input type="radio" id="Franca" name="pergunta1" value="Franca">
+        <label for="Franca">França</label>
+
+
+      <p class="perguntas">Que ingrediente está na maioria do interior dos Torrones?</p>
+
+      <input type="radio" id="Caramelo" name="pergunta2" value="Caramelo">
+      <label for="Caramelo">Caramelo</label><br>
+      <input type="radio" id="Amendoim" name="pergunta2" value="Amendoim">
+      <label for="Amendoim">Amendoim</label><br>
+      <input type="radio" id="Passas" name="pergunta2" value="Passas">
+      <label for="Passas">Passas</label>
+
+
+      <p class="perguntas">Qual a forma física do Torrone?</p>
+
+      <input type="radio" id="Paralelepipedo" name="pergunta3" value="Paralelepipedo">
+      <label for="Paralelepipedo">Formato de Paralelepípedo</label><br>
+      <input type="radio" id="Gomas" name="pergunta3" value="Gomas">
+      <label for="Gomas">Gomas em Esfera</label><br>
+      <input type="radio" id="Palitinhos" name="pergunta3" value="Palitinhos">
+      <label for="Palitinhos">Palitinhos</label>
+
+      <br /><br /><input type="submit" value="Enviar Respostas" onclick="alert('Respostas gravadas!')">
+    </form>
+  </div>
+  
+  <footer>
+    <script src="js/calendario.js"></script>
+  
+    <div class="alittlespace"></div>
+  
+    <div class="centrado">
+            <div class="tooltip">
+                    <div class="centrinho"> Passe o mouse</div><span>Obrigado por passar o mouse</span>
+            </div>
+    </div>
+  
+    <div class="centrado">
+            <div id="calendario"></div>
+    </div>
+  
+    <div class="centrado">
+            Criado por Filipe Carvalho em 2022
+    </div>
+  
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,334 @@
+@charset "UTF-8";
+* {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.07em;
+    line-height: 1.3em;
+}
+
+@media only screen and (max-width: 1400px) {
+.bloco img { width:1200px; }
+    }
+
+@media only screen and (max-width: 1200px) {
+.bloco img { width:1100px; }
+    }
+
+@media only screen and (max-width: 600px) {
+.bloco img { width:450px; }
+    }
+
+/* links */
+
+a {
+    color: #333;
+    }
+
+a:hover {
+    color: #870101;
+    text-decoration: underline;
+    }
+
+a:visited {
+    color: #333;
+    }
+
+/* configuração do tooltip */
+
+.tooltip {
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    }
+
+div.tooltip span {
+    position: relative;
+    visibility: hidden;
+    background-color: #000;
+    color: #FFF;
+    font-size: small;
+    padding: 5px 10px;
+    display: flex;
+    }
+
+div.tooltip span:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0; height: 0;
+    border-bottom: 8px solid #000;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    }
+
+div:hover.tooltip span {
+    visibility: visible;
+    opacity: 0.9;
+    top: 30px;
+    text-indent: 0cm;
+    left: 0;
+    z-index: 999;
+    }
+
+.perguntas {
+    font-size: 15pt;
+    font-weight: bolder;
+    color: #313131;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+/* títulos, parágrafos e links em contêineres predefinidos */
+
+h1 {
+    text-align: center;
+    font-size: 400%;
+    font-family: 'Montserrat', sans-serif;
+    color: #68c4ff;
+    }
+
+h2 {
+    text-align: center;
+    font-size: 250%;
+    font-family: 'Montserrat', sans-serif;
+    color: #8a8a8a;
+    }
+
+h3 {
+    text-indent: 3em;
+    font-size: 150%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    color: #585858;
+    max-width: 800px;
+    margin: 0 auto;
+    }
+
+
+h3 a {
+    text-decoration: none;
+    }
+
+h3 a:hover {
+    text-decoration: none;
+    color: #870101;
+    }
+
+h3 a:visited {
+    text-decoration: none;
+    }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 5px;
+    }
+
+/* menus */
+
+nav li.nav {
+    padding: 2px 10px;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    background-color:#EDEDED;
+    color: #333;
+    text-decoration: none;
+    border-bottom:3px solid #EDEDED;
+    }
+
+nav li a {
+    color: #6b6b6b;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    }
+
+nav li a:hover {
+    color: #870101;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    }
+
+nav li.selected {
+    padding: 2px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    color: #870101;
+    border-bottom: none;
+    font-weight: bolder;
+    }
+
+li.nav {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    }
+
+li.content {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    }
+
+/* rodapé */
+
+footer {
+    display: block;
+    position: relative;
+    padding-bottom: 100px;
+    }
+    
+    footer a:hover {
+    color: #870101;
+    text-decoration: none;
+    font-weight: bold;
+    }
+        
+footer ul li a, a:visited {
+    color: #68c4ff;
+    text-decoration: none;
+    align-items: center;
+    text-align: center;
+    }
+
+
+/* personalização das referências */
+
+.refers {
+    text-decoration: none;
+    }
+
+.refers a {
+    text-decoration: none;
+    }
+
+.refers a:hover {
+    text-decoration: none;
+    color: #870101;
+    font-weight: bold;
+    }
+
+p.space {
+    padding-left: 60px;
+    padding-right: 60px;
+    }
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+img {
+    max-width: 800px;
+    max-height: 400px;
+    }
+
+div.content { 
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;  
+    }
+
+.centrado {
+    -webkit-display: flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;    
+}
+
+.bloconew img{
+    display: flex;
+    justify-content: center;
+}
+.bloco {
+    display: flex;
+    justify-content: center;
+}
+
+.bloco img{
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+      }
+.bloco img:hover {
+    transform:scale(0.90);
+    -webkit-transform:scale(0.99);
+      }
+.bloco a{
+        -webkit-transition: all 0.7s ease;
+        transition: all 0.7s ease;
+          }
+.bloco a:hover {
+    transform:scale(0.95);
+    -webkit-transform:scale(0.95);
+      }
+
+.centrinho  {
+    text-align: center;
+    }
+
+#calendario {
+    padding-top: 40px;
+    display: flex;
+    align-content: center;
+}
+
+/* espaçador de emergência entre linhas */
+
+.alittlespace {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* cor de fundo da primeira coluna */
+
+th {
+    background-color: lightblue
+    }
+
+/* personalizações externas desconhecidas que peguei em sites e com amigos
+não conheço quase nenhuma dessas sintaxes */
+
+#flex-container {
+    display:flex;
+    align-items: center;
+    width: 50%;
+    height: 250px;
+    }
+
+.poscentralized {
+    -webkit-display: flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding-top: 20px;
+    }
+
+/* jogo da velha */
+
+.board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+    width: 50%;
+    margin-bottom: 20px;
+    }
+
+/* fundo comemorativo do sete de setembro */
+
+.fundoSetset {
+    background: url(img/cheers.gif) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
