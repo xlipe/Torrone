@@ -1,10 +1,30 @@
-const ehHoje = new Date(); // pega a data atual
-const invenTorrone = new Date(1441, 8, 1, 0, 0, 0); // atribui data aleatória de 1441 (quando surgiu o torrone)
-const aniverTorrone = Math.abs(ehHoje.getTime() - invenTorrone.getTime()); // subtrai as datas pela qtd de milissegundos de cada
-const osDias = Math.ceil(aniverTorrone / (1000 * 60 * 60 * 24)); //divide o resultado da operação anterior pelos milissegundos correspondentes a 1 dia
+//função que o davi achou e eu dei uma beliscadinha nela
 
-//usando botão com alerta pq não consegui aprender a imprimir o resultado em texto
-var button = document.querySelector('button');
-button.onclick = function() { 
-    alert('Da invenção do Torrone até agora, já se passaram ' + osDias + ' dias!');
+    window.onload = function() {
+        countUpFromTime("August 1, 1963 12:00:00", 'countup1'); // ** Change this line!
+    };
+    
+    function countUpFromTime(countFrom, id) {
+        countFrom = new Date(countFrom).getTime();
+        var now = new Date(),
+            countFrom = new Date(countFrom),
+            timeDifference = (now - countFrom);
+    
+        var secondsInADay = 60 * 60 * 1000 * 24,
+            secondsInAHour = 60 * 60 * 1000;
+    
+        days = Math.floor(timeDifference / (secondsInADay) * 1);
+        years = Math.floor(days / 365);
+        if (years > 1) { days = days - (years * 365) }
+        hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+        mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+        secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+        daysperyear = Math.floor(years * 365);
+        totaldays = (daysperyear + days);
+    
+        var idEl = document.getElementById(id);
+        idEl.getElementsByClassName('totaldays')[0].innerHTML = totaldays;
+
+        clearTimeout(countUpFromTime.interval);
+        countUpFromTime.interval = setTimeout(function() { countUpFromTime(countFrom, id); }, 1000);
     }
